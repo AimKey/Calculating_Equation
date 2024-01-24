@@ -22,7 +22,7 @@ public class Equation {
         this.b = b;
         this.c = c;
     }
-    
+
     public List<Double> getEvenNumbers() {
 //        TODO: Check for X1 and X2
         List<Double> res = new ArrayList<>();
@@ -33,8 +33,21 @@ public class Equation {
             res.add(b);
         }
         if (c != null) {
-            if (c % 2 == 0) res.add(c);
+            if (c % 2 == 0) {
+                res.add(c);
+            }
         }
+        if (x1 != null) {
+            if (x1 % 2 == 0) {
+                res.add(x1);
+            }
+        }
+        if (x2 != null) {
+            if (x2 % 2 == 0) {
+                res.add(x2);
+            }
+        }
+
         return res;
     }
 
@@ -49,7 +62,19 @@ public class Equation {
             res.add(b);
         }
         if (c != null) {
-            if (c % 2 != 0) res.add(c);
+            if (c % 2 != 0) {
+                res.add(c);
+            }
+        }
+        if (x1 != null) {
+            if (x1 % 2 != 0) {
+                res.add(x1);
+            }
+        }
+        if (x2 != null) {
+            if (x2 % 2 != 0) {
+                res.add(x2);
+            }
         }
         return res;
     }
@@ -64,7 +89,19 @@ public class Equation {
             res.add(b);
         }
         if (c != null) {
-            if (isPerfectSquare(c)) res.add(c);
+            if (isPerfectSquare(c)) {
+                res.add(c);
+            }
+        }
+        if (x1 != null) {
+            if (isPerfectSquare(x1)) {
+                res.add(x1);
+            }
+        }
+        if (x2 != null) {
+            if (isPerfectSquare(x2)) {
+                res.add(x2);
+            }
         }
         return res;
     }
