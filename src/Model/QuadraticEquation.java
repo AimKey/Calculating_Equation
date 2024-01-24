@@ -18,9 +18,6 @@ public class QuadraticEquation extends Equation {
 
     public List<Double> getSolutions() {
         List<Double> res = new ArrayList<>();
-//        a b c
-//        a b
-//          b c
         if (a == 0) {
             if (b != 0) {
                 res.add(-c / b);
@@ -39,7 +36,6 @@ public class QuadraticEquation extends Equation {
         }
         res.add(x1);
         res.add(x2);
-        System.out.println("Vo so nghiem: " + res.isEmpty());
         return res;
     }
 }
